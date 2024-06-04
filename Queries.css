@@ -53,8 +53,16 @@
   html {
     font-size: 37.5%;
   }
-  #name--0,
-  #name--1 {
-    font-size: 3rem;
+}
+/* ********************************  */
+/* For Smaller-Phones(Below 460px) ->  460px/16px = 28.75em */
+/* ******************************** */
+@media (max-width: 28.75em) {
+  /* 5px/16px =  31.25*/
+  html {
+    font-size: 31.25%;
+  }
+  .name {
+    font-size: 2.5rem;
   }
 }
