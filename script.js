@@ -137,6 +137,8 @@ btnHold.addEventListener('click', function () {
         player1.classList.toggle('player--winner');
       }
     }
+    currentScore0El.textContent = '0';
+    currentScore1El.textContent = '0';
     currentScore = 0;
     changePlayer();
   }
