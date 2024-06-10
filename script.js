@@ -6,7 +6,7 @@
 const score0El = document.getElementById('score--0');
 const score1El = document.getElementById('score--1');
 // Th plyers all time scores
-const scores = [0, 0];
+let scores;
 // The dice Img element
 const diceEl = document.querySelector('.dice');
 // The buttons
@@ -31,7 +31,7 @@ let activePlayer;
 const newGame = function () {
   currentScore = 0;
   activePlayer = 0;
-
+  scores = [0, 0];
   // Starting Conditions
   score0El.textContent = currentScore;
   score1El.textContent = currentScore;
